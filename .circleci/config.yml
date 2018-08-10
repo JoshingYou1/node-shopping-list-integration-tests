@@ -39,6 +39,9 @@ jobs:
       - run: npm test
     
   deploy:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:8.11
     steps:
       - checkout
       - run:
